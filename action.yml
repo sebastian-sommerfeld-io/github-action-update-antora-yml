@@ -2,11 +2,11 @@
 name: Update antora.yml
 description: Github Action to adjust version information in antora.yml depending on current branch or version tag.
 inputs:
-  ref: # id of input
-    description: Github Ref
+  git_ref: # id of input
+    description: Git Ref
     required: true
 runs:
   using: 'docker'
   image: 'src/main/Dockerfile'
   args:
-    - ${{ inputs.ref }}
+    - ${{ inputs.git_ref }}
