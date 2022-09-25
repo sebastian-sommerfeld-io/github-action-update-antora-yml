@@ -8,7 +8,7 @@
 #
 # ==== Arguments
 #
-# The script does not accept any parameters.
+# . *$1* (string) git_ref: current branch / tag (mandatory)
 
 
 ANTORA_YML="docs/antora.yml"
