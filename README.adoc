@@ -1,2 +1,3 @@
-# github-action-update-antora-yml
+= Github Action: Update antora.yml
+
 Adjust version information in antora.yml depending on current branch or version tag.
