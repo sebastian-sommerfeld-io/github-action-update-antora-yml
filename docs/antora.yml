@@ -1,0 +1,7 @@
+---
+name: github-action-update-antora-yml
+title: Github-Action Update antora.yml
+version: feat__initial-setup
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
