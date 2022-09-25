@@ -39,6 +39,8 @@ jobs:
         run: echo ${{github.ref}}
       - name: Adjust version in antora.yml
         uses: sebastian-sommerfeld-io/github-action-update-antora-yml@main
+        with:
+          ref: ${{github.ref}}
       - name: Run yamllint for docs/antora.yml
         uses: ibiqlik/action-yamllint@v3
         with:
