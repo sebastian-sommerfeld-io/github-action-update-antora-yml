@@ -1,4 +1,4 @@
-= Github-Action: Update antora.yml
+= Github Action: Update antora.yml
 :image-name: update-antora-yml
 :project-name: github-action-{image-name}
 :url-project: https://github.com/sebastian-sommerfeld-io/{project-name}
@@ -26,19 +26,20 @@ image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-u
 * Where to file issues -> {url-project}/issues
 
 == Inputs
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-CAUTION: todo ...
+No Inputs defined.
 
 == Outputs
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-CAUTION: todo ...
+An updated `docs/antora.yml` file.
 
 == Example usage
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+The scripts expects Antora docs inside a `docs` folder and expects a `docs/antora.yml` file.
 
-CAUTION: todo ...
+
+[source, yaml]
+----
+- name: Adjust version in antora.yml
+  uses: sebastian-sommerfeld-io/ github-action-update-antora-yml@main
+----
 
 == Risks and Technical Debts
 Scale for Probability and Impact: Low, Medium and High
