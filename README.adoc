@@ -38,7 +38,7 @@ The scripts expects Antora docs inside a `docs` folder and expects a `docs/antor
 [source, yaml]
 ----
 - name: Adjust version in antora.yml
-  uses: sebastian-sommerfeld-io/ github-action-update-antora-yml@main
+  uses: sebastian-sommerfeld-io/github-action-update-antora-yml@main
 ----
 
 == Risks and Technical Debts
