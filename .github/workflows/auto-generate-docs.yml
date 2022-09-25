@@ -88,7 +88,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    needs: update-linter-rules
+    # needs: update-linter-rules
+    needs: update-antora-yml
 
     steps:
       - name: Checkout code
