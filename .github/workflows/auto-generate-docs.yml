@@ -38,7 +38,7 @@ jobs:
       - name: Print Branchname
         run: echo ${{github.ref}}
       - name: Adjust version in antora.yml
-        uses: sebastian-sommerfeld-io/ github-action-update-antora-yml@main
+        uses: sebastian-sommerfeld-io/github-action-update-antora-yml@main
       - name: Run yamllint for docs/antora.yml
         uses: ibiqlik/action-yamllint@v3
         with:
