@@ -12,7 +12,7 @@
 
 
 ANTORA_YML="docs/antora.yml"
-BRANCH="${{github.ref}}"
+BRANCH="$1"
 
 
 # @description Adjust version from 'main' to '<branchname>' or to '<version>' for release branches (if not already correct).
@@ -50,8 +50,5 @@ case "$BRANCH" in
   *"refs/heads/release/"* ) mainToBranchname ;;
   *"refs/heads/main"* ) branchnameToMain ;;
 esac
-
-pwd
-ls -alF
 
 cat "$ANTORA_YML"

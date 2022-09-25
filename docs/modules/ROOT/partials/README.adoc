@@ -8,7 +8,11 @@ image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-u
 * Where to file issues -> {url-project}/issues
 
 == Inputs
-No Inputs defined.
+[cols="1,1,1,3", options="header"]
+|===
+|Input |Type |Required |Description
+|git_ref |String |true |Githib Ref `${{github.ref}}`
+|===
 
 == Outputs
 An updated `docs/antora.yml` file.
@@ -20,7 +24,9 @@ The scripts expects Antora docs inside a `docs` folder and expects a `docs/antor
 [source, yaml]
 ----
 - name: Adjust version in antora.yml
-  uses: sebastian-sommerfeld-io/ github-action-update-antora-yml@main
+  uses: sebastian-sommerfeld-io/github-action-update-antora-yml@main
+  with:
+    ref: ${{github.ref}}
 ----
 
 == Risks and Technical Debts

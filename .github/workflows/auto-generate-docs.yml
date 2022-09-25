@@ -37,45 +37,14 @@ jobs:
         uses: actions/checkout@v3
       - name: Print Branchname
         run: echo ${{github.ref}}
-
-      - name: Adjust version from 'main' to '<branchname>' or to '<version>' for release branches (if not already correct)
-        if: contains(github.ref, 'refs/heads/feat/') || contains(github.ref, 'refs/heads/release/')
-        run: |
-          BRANCH="${{github.ref}}"
-
-          old="refs/heads/"
-          BRANCH="${BRANCH//$old/}"
-
-          # antora does not allow slashes in versions
-          old="/"
-          new="__"
-          BRANCH="${BRANCH/$old/$new}"
-
-          # remove the prefix for release branches
-          old="release__"
-          BRANCH="${BRANCH/$old/}"
-
-          oldPattern='version: '
-          new="version: $BRANCH"
-          sed -i "/$oldPattern/s/.*/$new/" docs/antora.yml
-
-          cat docs/antora.yml
-        shell: bash
-      - name: Adjust version from '<branchname>' to 'main' if not already correct ... run on main branch
-        if: github.ref == 'refs/heads/main'
-        run: |
-          oldPattern='version: '
-          new='version: main'
-          sed -i "/$oldPattern/s/.*/$new/" docs/antora.yml
-
-          cat docs/antora.yml
-        shell: bash
-
+      - name: Adjust version in antora.yml
+        uses: sebastian-sommerfeld-io/github-action-update-antora-yml@main
+        with:
+          git_ref: ${{github.ref}}
       - name: Run yamllint for docs/antora.yml
         uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: docs/antora.yml
-
       - name: Commit and push
         uses: EndBug/add-and-commit@v9
         with:
