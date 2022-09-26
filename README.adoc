@@ -30,6 +30,7 @@ image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-u
 |===
 |Input |Type |Required |Description
 |git_ref |String |true |Githib Ref `${{github.ref}}`
+|file |String |false |Path to antora.yml (default = `docs/antora.yml`)
 |===
 
 == Outputs
