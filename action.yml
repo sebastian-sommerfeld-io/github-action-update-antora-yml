@@ -5,8 +5,13 @@ inputs:
   git_ref: # id of input
     description: Git Ref
     required: true
+  file: # id of input
+    description: Path to antora.yml
+    required: true
+    default: docs/antora.yml
 runs:
   using: 'docker'
   image: 'src/main/Dockerfile'
   args:
     - ${{ inputs.git_ref }}
+    - ${{ inputs.file }}

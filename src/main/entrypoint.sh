@@ -9,9 +9,10 @@
 # ==== Arguments
 #
 # . *$1* (string) git_ref: current branch / tag (mandatory)
+# . *$2* (string) file: path to antora.yml (default = ``docs/antora.yml``) (optional)
 
 
-ANTORA_YML="docs/antora.yml"
+ANTORA_YML="$2"
 BRANCH="$1"
 
 
