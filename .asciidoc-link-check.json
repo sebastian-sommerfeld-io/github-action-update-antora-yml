@@ -1,6 +1,6 @@
 {
     "ignorePatterns": [
         { "pattern": "^https://www.sommerfeld.io" },
-        { "pattern": "^https://docs.cloud.sommerfeld.io" }
+        { "pattern": "^https://www.sommerfeld.io/docs/github-actions" }
     ]
 }

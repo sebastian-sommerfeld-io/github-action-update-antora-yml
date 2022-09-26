@@ -22,7 +22,7 @@ image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={githu
 image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-url}/{job-ci}]
 
 * Github Repository -> {url-project}
-* Documentation -> https://docs.cloud.sommerfeld.io/{project-name}-docs/main
+* Documentation -> https://www.sommerfeld.io/docs/github-actions/{project-name}-docs/main
 * Where to file issues -> {url-project}/issues
 
 == Inputs
