@@ -99,10 +99,10 @@ jobs:
     if: failure()
 
     steps:
-      - name: Send pipeline status to Slack
+      - name: Send Pipeline Status to Google Chat
         if: always()
-        uses: kpritam/slack-job-status-action@v1
+        uses: Co-qn/google-chat-notification@releases/v1
         with:
-          job-status: failure
-          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
-          channel: C0438TFQNPM # pipelines channel
+          name: Auto-generate docs
+          url: ${{ secrets.GOOGLE_CHAT_WEBHOOK }}
+          status: failure
