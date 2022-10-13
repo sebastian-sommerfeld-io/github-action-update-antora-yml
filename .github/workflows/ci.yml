@@ -108,6 +108,6 @@ jobs:
         if: always()
         uses: Co-qn/google-chat-notification@releases/v1
         with:
-          name: Auto-generate docs
+          name: ${{ github.workflow }}
           url: ${{ secrets.GOOGLE_CHAT_WEBHOOK }}
           status: failure
