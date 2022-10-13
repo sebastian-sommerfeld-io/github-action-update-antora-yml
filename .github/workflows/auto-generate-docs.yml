@@ -1,5 +1,5 @@
 ---
-name: ${{ github.workflow }}
+name: Auto-generate docs
 
 on:
   push:
