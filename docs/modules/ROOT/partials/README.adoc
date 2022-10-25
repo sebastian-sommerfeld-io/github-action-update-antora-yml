@@ -21,7 +21,6 @@ An updated `docs/antora.yml` file.
 == Example usage
 The scripts expects Antora docs inside a `docs` folder and expects a `docs/antora.yml` file.
 
-
 [source, yaml]
 ----
 - name: Adjust version in antora.yml
