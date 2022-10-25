@@ -1,7 +1,7 @@
 ---
 name: github-action-update-antora-yml
 title: Github-Action Update antora.yml
-version: feat__pipeline-cleanup
+version: main
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
