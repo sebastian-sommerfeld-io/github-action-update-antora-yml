@@ -6,7 +6,7 @@
 #
 # IMPORTANT: Do not run this script directly. This script is intended to run as part of a Github Actions job.
 #
-# ==== Arguments
+# === Script Arguments
 #
 # . *$1* (string) git_ref: current branch / tag (mandatory)
 # . *$2* (string) file: path to antora.yml (default = ``docs/antora.yml``) (optional)
