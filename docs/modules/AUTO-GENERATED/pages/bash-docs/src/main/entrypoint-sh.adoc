@@ -25,8 +25,8 @@ IMPORTANT: Do not run this script directly. This script is intended to run as pa
 
 == Index
 
-* <<maintobranchname,mainToBranchname>>
-* <<branchnametomain,branchnameToMain>>
+* <<_maintobranchname,mainToBranchname>>
+* <<_branchnametomain,branchnameToMain>>
 
 === mainToBranchname
 
