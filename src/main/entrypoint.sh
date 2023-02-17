@@ -47,9 +47,8 @@ function branchnameToMain() {
 echo "Update version in $ANTORA_YML"
 echo "Current ref = $BRANCH"
 case "$BRANCH" in 
-  *"refs/heads/feat/"* ) mainToBranchname ;;
-  *"refs/heads/release/"* ) mainToBranchname ;;
   *"refs/heads/main"* ) branchnameToMain ;;
+  *"refs/heads/"* ) mainToBranchname ;;
 esac
 
 cat "$ANTORA_YML"
