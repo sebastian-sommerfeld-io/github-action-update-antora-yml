@@ -49,7 +49,7 @@ echo "Current ref = $BRANCH"
 
 if [[ "$BRANCH" == *"refs/heads/main"* ]]; then
   branchnameToMain
-elif [[ "$BRANCH" == *"refs/heads/"* ]]; then
+else
   mainToBranchname
 fi
 
