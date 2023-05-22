@@ -1,4 +1,4 @@
-FROM ubuntu:23.04 AS build
+FROM ubuntu:23.10 AS build
 LABEL maintainer="sebastian@sommerfeld.io"
 
 COPY entrypoint.sh /entrypoint.sh
