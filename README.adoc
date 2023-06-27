@@ -21,8 +21,9 @@ Github Action to adjust version information in antora.yml depending on current b
 image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={github-actions-url}/{job-generate-docs}]
 image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-url}/{job-ci}]
 
+== About this action
+
 * Github Repository -> {url-project}
-* Documentation -> https://www.sommerfeld.io/docs/github-actions/{project-name}-docs/main
 * Where to file issues -> {url-project}/issues
 
 == Inputs
