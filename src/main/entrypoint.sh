@@ -51,6 +51,9 @@ function branchnameToMain() {
 echo "Update version in $ANTORA_YML"
 echo "Current ref = $BRANCH"
 
+echo "[INFO] $ANTORA_YML before updating"
+cat "$ANTORA_YML"
+
 if [[ "$BRANCH" == *"refs/heads/main"* ]]; then
   branchnameToMain
 else
