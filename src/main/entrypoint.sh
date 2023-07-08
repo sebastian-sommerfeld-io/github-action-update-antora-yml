@@ -18,6 +18,8 @@ BRANCH="$1"
 
 # @description Adjust version from 'main' to '<branchname>' or to '<version>' for release branches (if not already correct).
 function mainToBranchname() {
+    echo "[INFO] main to branchname"
+
     old="refs/heads/"
     BRANCH="${BRANCH//$old/}"
 
@@ -38,6 +40,8 @@ function mainToBranchname() {
 
 # @description Adjust version from '<branchname>' to 'main' if not already correct ... run on main branch.
 function branchnameToMain() {
+    echo "[INFO] branchname to main"
+
     oldPattern='version: '
     new='version: main'
     sed -i "/$oldPattern/s/.*/$new/" "$ANTORA_YML"
@@ -53,4 +57,5 @@ else
   mainToBranchname
 fi
 
+echo "[INFO] $ANTORA_YML after updating"
 cat "$ANTORA_YML"
