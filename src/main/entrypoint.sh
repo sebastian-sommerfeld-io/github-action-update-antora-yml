@@ -48,8 +48,8 @@ function branchnameToMain() {
 }
 
 
-echo "Update version in $ANTORA_YML"
-echo "Current ref = $BRANCH"
+echo "[INFO] Update version in $ANTORA_YML"
+echo "[INFO] Current ref = $BRANCH"
 
 echo "[INFO] $ANTORA_YML before updating"
 cat "$ANTORA_YML"

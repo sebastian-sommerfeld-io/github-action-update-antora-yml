@@ -30,6 +30,16 @@ The scripts expects Antora docs inside a `docs` folder and expects a `docs/antor
     ref: ${{github.ref}}
 ----
 
+== Local development
+To test the behavior of this action, you can run the following command from the src/main folder:
+
+* `./entrypoint.sh refs/heads/main ../../docs/antora.yml` to set `main` as version
+* ./entrypoint.sh v0.1.5-SNAPSHOT ../../docs/antora.yml to set `v0.1.5-SNAPSHOT` as version
+
+This command executes the same script that is triggered from the GitHub Action workflow associated with the project. By running it locally, you can observe the behavior and ensure that the action performs as expected. It allows you to validate the functionality and behavior of the script without relying solely on the automated workflow execution.
+
+Please be aware that running the aforementioned command may modify your `antora.yml` file. Therefore, be prepared to revert any changes made by the script if necessary before committing your changes.
+
 == Risks and Technical Debts
 Scale for Probability and Impact: Low, Medium and High
 
