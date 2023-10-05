@@ -1,0 +1,1 @@
+* xref:src/main/Dockerfile.adoc[src/main/Dockerfile]

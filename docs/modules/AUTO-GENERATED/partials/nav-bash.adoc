@@ -1,0 +1,1 @@
+* xref:src/main/entrypoint-sh.adoc[src/main/entrypoint.sh]
