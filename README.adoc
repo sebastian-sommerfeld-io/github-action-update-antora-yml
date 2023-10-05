@@ -1,4 +1,4 @@
-= Github Action: Update antora.yml
+= github-action-update-antora-yml
 :image-name: update-antora-yml
 :project-name: github-action-{image-name}
 :url-project: https://github.com/sebastian-sommerfeld-io/{project-name}
