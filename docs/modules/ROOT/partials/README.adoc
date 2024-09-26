@@ -1,5 +1,7 @@
 Github Action to adjust version information in antora.yml depending on current branch or version tag.
 
+IMPORTANT: Deprecated - This project is no longer maintained!
+
 image:{github-actions-url}/{job-generate-docs}/{badge}[Github Badge, link={github-actions-url}/{job-generate-docs}]
 image:{github-actions-url}/{job-ci}/{badge}[Github Badge, link={github-actions-url}/{job-ci}]
 
